@@ -17,3 +17,11 @@ The ML project uses Linear Regression to predict a numeric value such as the tri
 
 ## Data Quality
 
+## Training linear regression model - develop an effective asset with good performance
+### Model Optimization: Improve the performance of our ML model multiple times with Loss function
+ **Mean Squared Error** -- avgerage squared distance between actual values and predicted values of the label
+1. ``` trip_duration_by_stations MSE = 111.2176```
+
+2. ``` trip_duration_by_stations_and_day MSE = 98.0522```
+
+3. ``` trip_duration_by_stations_day_age MSE = 110.8004```
