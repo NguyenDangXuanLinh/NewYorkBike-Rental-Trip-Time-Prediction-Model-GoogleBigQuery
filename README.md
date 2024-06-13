@@ -25,3 +25,30 @@ The ML project uses Linear Regression to predict a numeric value such as the tri
 2. ``` trip_duration_by_stations_and_day MSE = 98.0522```
 
 3. ``` trip_duration_by_stations_day_age MSE = 110.8004```
+
+
+## Conclusion 
+The result of the **SELECT COUNT** query returns a value of :
+
+- **1,548,371 predictions**, with a difference between the predicted and the actual value being **less than 15 minutes**.
+
+Considering that the total size of the prediction_table table is 1,728,078, we can say that:
+
+- in 89.6% of cases, our machine learning model is able to predict the trip duration with a gap that's less than 15 minutes.
+
+> [!IMPORTANT Actionable Recommendations]
+> Key information users need to know to achieve their goal.
+
+## Actionable Recommendation
+From the conclusion, here are some recommendations we provide for the new on-demand and pay-as-you-go pricing model strategy:
+
+- We suggest that pricing start with `**quarterly fare**	#8B0000` for pricing model with recurring payments in the new mobile application.
+- Featuring user story, we suggest that "when a customer picks up a bike **from a start station** and **specifies its destination** on the mobile application **on a specific day of the week**, our model will be able to **predict the exact fare of the ride** with a **mean absolute error of about 6.8 minutes**".
+- We confident that 89.6% the application will provide a good estimation of the price to our customers.
+
+
+
+
+
+
+
