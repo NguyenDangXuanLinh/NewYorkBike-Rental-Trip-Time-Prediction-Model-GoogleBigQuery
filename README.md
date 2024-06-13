@@ -20,35 +20,41 @@ The ML project uses Linear Regression to predict a numeric value such as the tri
 ## Training linear regression model - develop an effective asset with good performance
 ### Model Optimization: Improve the performance of our ML model multiple times with Loss function
  **Mean Squared Error** -- avgerage squared distance between actual values and predicted values of the label
-1. ``` trip_duration_by_stations MSE = 111.2176```
+1. ```ruby
+   trip_duration_by_stations - MSE = 111.2176```
 
-2. ``` trip_duration_by_stations_and_day MSE = 98.0522```
+3. ``` ruby
+   trip_duration_by_stations_and_day - MSE = 98.0522```
 
-3. ``` trip_duration_by_stations_day_age MSE = 110.8004```
+5. ```ruby
+    trip_duration_by_stations_day_age - MSE = 110.8004```
 
 
 ## Conclusion 
 The result of the **SELECT COUNT** query returns a value of :
-
-- **1,548,371 predictions**, with a difference between the predicted and the actual value being **less than 15 minutes**.
+```ruby
+ 1,548,371 Predictions, with a difference between the predicted, the actual value being Less Than 15 Minutes.
+```
 
 Considering that the total size of the prediction_table table is 1,728,078, we can say that:
+```ruby
+ In 89.6% Of Cases, our machine learning model is able to predict:
 
-- in 89.6% of cases, our machine learning model is able to predict the trip duration with a gap that's less than 15 minutes.
+- The Trip Duration with a gap that's Less Than 15 Minutes.
+- The Exact Fare of The Ride with Mean Absolute Error of 6,8 mins.
 
-> [!IMPORTANT Actionable Recommendations]
-> Key information users need to know to achieve their goal.
+```
 
-## Actionable Recommendation
+## Actionable Recommendations
 From the conclusion, here are some recommendations we provide for the new on-demand and pay-as-you-go pricing model strategy:
 
-- We suggest that pricing start with `**quarterly fare**	#8B0000` for pricing model with recurring payments in the new mobile application.
-- Featuring user story, we suggest that "when a customer picks up a bike **from a start station** and **specifies its destination** on the mobile application **on a specific day of the week**, our model will be able to **predict the exact fare of the ride** with a **mean absolute error of about 6.8 minutes**".
-- We confident that 89.6% the application will provide a good estimation of the price to our customers.
-
-
-
-
+| Recommendations| Description For The Model In Mobile Application|
+| --- | --- |
+| Pricing Model Strategy | Pricing start with quarterly fare for pricing model with recurring payments  |
+| Prediction Trip User Stories | when a customer picks up a bike **from a start station** and **specifies its destination** on the mobile application **on a specific day of the week**. |
+| Prediction Trip Duration Confident | Our model will be able to **predict the trip duration** with a with a gap less than 15 minutes.|
+| Model Performance Confident|  Our model will be able to **predict the exact fare of the ride** with a **mean absolute error of about 6.8 minutes**|
+| Price Prediction Confident | We confident that 89.6% the application will provide a good estimation of the price to our customers|
 
 
 
