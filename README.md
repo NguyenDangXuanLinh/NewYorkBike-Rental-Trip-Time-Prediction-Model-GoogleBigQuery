@@ -1,49 +1,52 @@
 # Linear Regression with Prediction Features in Mobile Application 
 
 ## Problem Statement
-New YOrk City bike is a sharing services by Citi Bike. The company's goal is to crate a digotal experience for a new pay-as-you-go rental options. 
-Therefore, in the development of a new mobile application, they plan to add feature that enable customers to know the predicted average trip time 
-and cost estimation for the ride if they provide their departure and arrival station. 
+New York City bike is a sharing services by Citi Bike. The company's goal is to crate a digital experience for a new pay-as-you-go rental options. 
+Therefore, in the development of a new mobile application, they plan to add feature that enable customers to know the predicted average trip time and cost estimation for the ride if they provide their departure and arrival station. 
 
-The ML project uses Linear Regression to predict a numeric value such as the trip time of a bike rental for a new prediction system in mobile application.
-<br>
-
+## Project Objectives
+The goal of this project is to develop a predictive model that enable customers to know the predicted average trip time and cost estimation for the ride. By accurately predicting trip outcomes of a bike rental, customers can make informed decisions, thereby increasing customer's benefits and enhancing overall digital experience. 
 
 ## Dataset 
  The ML datasets have been collected and stored in a BigQuery public dataset `bigquery-public-data` under the name `new_york_citibike` dataset.
- The public dataset has 2 BigQuery tebles. The one used is `citybike_trips` table.
+ 
+ The public dataset has 2 BigQuery tables. The one used is `citybike_trips` table.
  - The `tripduration` is our label -- indicates the duration expressed in seconds if each bike rental.
  - Other fields are potntial features -- contains more than 58 million records.
 
-## Data Quality
+## Methodology
+The project follows a standard machine learning pipeline, which includes the following steps:
 
-## Training linear regression model - develop an effective asset with good performance
+ - Data Preprocessing: Cleaning the dataset, handling missing values, tranform datetime variables, and feature scaling.
+   
+ - Model Selection: Using Power Query on BigQuery to split dataset into 3 sets to perform model selection and model evaluation. Months were used as a targeted measurement to split dataset. After that, trying out various machine learning algorithms and selecting the best-performing model based on evaluation metrics.
+   
+ - Model Evaluation: Assessing the model's performance using appropriate evaluation metrics and fine-tuning as necessary.
+
+## Training Linear Regression model - Develop an effective asset with good performance
 ### Model Optimization: Improve the performance of our ML model multiple times with Loss function
+
  **Mean Squared Error** -- avgerage squared distance between actual values and predicted values of the label
  
- 1.
-  ```ruby
-trip_duration_by_stations - MSE = 111.2176
-```
+1. ```ruby
+    trip_duration_by_stations - MSE = 111.2176
+   ```
 <img width="50%" align="center" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_1.png">
 
     
- 2.
-   ```ruby
-
-    trip_duration_by_stations_and_day - MSE = 98.0522
+2. ```ruby
+   trip_duration_by_stations_and_day - MSE = 98.0522
    ```
    
 <img width="50%"  align="center" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_2.png">
 
-    
-  3.
-   ```ruby
 
-    trip_duration_by_stations_day_age - MSE = 110.8004
+3. ```ruby
+   trip_duration_by_stations_day_age - MSE = 110.8004
    ```
+   
 <img width="50%" align="center" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_3.png">
 
@@ -58,7 +61,8 @@ The result of the **SELECT COUNT** query returns a value of :
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/difference_predict.png">
 
     
-Considering that the total size of the prediction_table table is 1,728,078, we can say that:
+### Considering that the total size of the prediction_table table is 1,728,078, we can say that:
+
 ```ruby
  In 89.6% Of Cases, our machine learning model is able to predict:
 
