@@ -25,29 +25,39 @@ The ML project uses Linear Regression to predict a numeric value such as the tri
    trip_duration_by_stations - MSE = 111.2176```
 <img width="100%" align="middle" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_1.png">
-2. ``` ruby
-   trip_duration_by_stations_and_day - MSE = 98.0522```
+
+    
+2. ```ruby
+
+    trip_duration_by_stations_and_day - MSE = 98.0522```
+   
 <img width="100%" align="middle" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_2.png">
+
+    
 3. ```ruby
+
     trip_duration_by_stations_day_age - MSE = 110.8004```
 <img width="100%" align="middle" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_3.png">
 
+
 ## Conclusion 
 The result of the **SELECT COUNT** query returns a value of :
-```ruby
+
+ ```ruby
  1,548,371 Predictions, with a difference between the predicted, the actual value being Less Than 15 Minutes.
 ```
 <img width="100%" align="middle" 
-    src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/results.png">
+    src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/difference_predict.png">
+
+    
 Considering that the total size of the prediction_table table is 1,728,078, we can say that:
 ```ruby
  In 89.6% Of Cases, our machine learning model is able to predict:
 
 - The Trip Duration with a gap that's Less Than 15 Minutes.
 - The Exact Fare of The Ride with Mean Absolute Error of 6,8 mins.
-
 ```
 
 ## Actionable Recommendations
@@ -63,3 +73,5 @@ From the conclusion, here are some recommendations we provide for the new on-dem
 
 
 
+<img width="100%" align="middle" 
+    src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/final_eval.png">
