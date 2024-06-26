@@ -20,25 +20,31 @@ The ML project uses Linear Regression to predict a numeric value such as the tri
 ## Training linear regression model - develop an effective asset with good performance
 ### Model Optimization: Improve the performance of our ML model multiple times with Loss function
  **Mean Squared Error** -- avgerage squared distance between actual values and predicted values of the label
+1. 
 
-1. ```ruby
-   trip_duration_by_stations - MSE = 111.2176```
-<img width="100%" align="middle" 
+```ruby
+trip_duration_by_stations - MSE = 111.2176
+```
+<img width="50%" align="middle" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_1.png">
 
     
-2. ```ruby
+2.
+   ```ruby
 
-    trip_duration_by_stations_and_day - MSE = 98.0522```
+    trip_duration_by_stations_and_day - MSE = 98.0522
+   ```
    
-<img width="100%" align="middle" 
+<img width="50%" align="middle" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_2.png">
 
     
-3. ```ruby
+3.
+   ```ruby
 
-    trip_duration_by_stations_day_age - MSE = 110.8004```
-<img width="100%" align="middle" 
+    trip_duration_by_stations_day_age - MSE = 110.8004
+   ```
+<img width="50%" align="middle" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_3.png">
 
 
@@ -48,7 +54,7 @@ The result of the **SELECT COUNT** query returns a value of :
  ```ruby
  1,548,371 Predictions, with a difference between the predicted, the actual value being Less Than 15 Minutes.
 ```
-<img width="100%" align="middle" 
+<img width="50%" align="middle" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/difference_predict.png">
 
     
@@ -73,5 +79,5 @@ From the conclusion, here are some recommendations we provide for the new on-dem
 
 
 
-<img width="100%" align="middle" 
+<img width="50%" align="middle" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/final_eval.png">
