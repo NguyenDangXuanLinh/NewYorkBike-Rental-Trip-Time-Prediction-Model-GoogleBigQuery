@@ -12,7 +12,7 @@ The goal of this project is to develop a predictive model that enable customers 
  
  The public dataset has 2 BigQuery tables. The one used is `citybike_trips` table.
  - The `tripduration` is our label -- indicates the duration expressed in seconds if each bike rental.
- - Other fields are potntial features -- contains more than 58 million records.
+ - Other fields are potential features -- contains more than 58 million records.
 
 ## Methodology
 The project follows a standard machine learning pipeline, which includes the following steps:
