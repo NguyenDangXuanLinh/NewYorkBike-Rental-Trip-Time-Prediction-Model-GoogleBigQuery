@@ -84,3 +84,7 @@ From the conclusion, here are some recommendations we provide for the new on-dem
 
 <img width="100%"  align="center" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/final_eval.png">
+
+
+## Author
+- Nguyen Dang Xuan Linh - [GitHub Profile](https://github.com/NguyenDangXuanLinh)
