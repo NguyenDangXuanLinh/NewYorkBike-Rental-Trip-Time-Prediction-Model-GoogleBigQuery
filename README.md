@@ -10,7 +10,7 @@ By accurately predicting trip outcomes of a bike rental, customers can make info
  - Other fields are potential features -- contains more than 58 million records.
 ## Methodology
  - Data Preprocessing: Cleaning, handling missing values and tranforming datetime variables, and feature scaling.   
- - Model Selection: Using Power Query on BigQuery to split dataset into 3 sets - for model selection and model evaluation purposes. Months were used as a targeted measurement to split dataset. 
+ - Model Selection: split dataset into 3 sets - for model selection, evaluation, and test purposes. Months were used as a targeted measurement to split dataset. 
  - Model Evaluation: Assessing the model's performance using appropriate evaluation metrics and fine-tuning as necessary.
 ## Train Linear Regression model - Develop an effective asset with Loss function - MSE
 ### Model Optimization: Improve the performance of our ML model multiple times with **Mean Squared Error***
