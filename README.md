@@ -22,7 +22,7 @@ By accurately predicting trip outcomes of a bike rental, customers can make info
 <img width="50%" align="center" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_1.png">
 
-    
+## The chosen model     
 2. ```ruby
    trip_duration_by_stations_and_day - MSE = 98.0522
    ```
@@ -39,24 +39,18 @@ By accurately predicting trip outcomes of a bike rental, customers can make info
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/evaluation_3.png">
 
 
-## Conclusion 
+# Conclusion 
+## Chosen model prediction results
 The result of the **SELECT COUNT** query returns a value of :
-
- ```ruby
- 1,548,371 Predictions, with a difference between the predicted, the actual value being Less Than 15 Minutes.
-```
+ **1,548,371 predictions**, with a difference between the predicted, the actual value being** Less Than 15 Minutes**.
 <img width="90%" align="center" 
     src="https://github.com/NguyenDangXuanLinh/Predict-trip-time-for-NewYorkBikes-rental-services/blob/main/.images/difference_predict.png">
 
-    
-### Considering that the total size of the prediction_table table is 1,728,078, we can say that:
-
-```ruby
- In 89.6% Of Cases, our machine learning model is able to predict:
-
+## The interpretation of results 
+Considering that the total size of the `prediction_table` is 1,728,078, we can say that:
+ In 89.6% Of Cases, our linear regeression model is able to predict
 - The Trip Duration with a gap that's Less Than 15 Minutes.
 - The Exact Fare of The Ride with Mean Absolute Error of 6,8 mins.
-```
 
 ## Actionable Recommendations
 From the conclusion, here are some recommendations we provide for the new on-demand and pay-as-you-go pricing model strategy:
