@@ -1,32 +1,20 @@
 # Linear Regression with Prediction Features in Mobile Application 
 
-## Problem Statement
-New York City bike is a sharing services by Citi Bike. The company's goal is to crate a digital experience for a new pay-as-you-go rental options. 
-Therefore, in the development of a new mobile application, they plan to add feature that enable customers to know the predicted average trip time and cost estimation for the ride if they provide their departure and arrival station. 
-
 ## Project Objectives
-The goal of this project is to develop a predictive model that enable customers to know the predicted average trip time and cost estimation for the ride. By accurately predicting trip outcomes of a bike rental, customers can make informed decisions, thereby increasing customer's benefits and enhancing overall digital experience. 
+The goal of this project is to develop a predictive model that enable customers to know the predicted average trip time and cost estimation for the ride if they provide their departure and arrival station. 
+By accurately predicting trip outcomes of a bike rental, customers can make informed decisions, thereby increasing customer's benefits and enhancing overall digital experience. 
 
 ## Dataset 
- The ML datasets have been collected and stored in a BigQuery public dataset `bigquery-public-data` under the name `new_york_citibike` dataset.
- 
- The public dataset has 2 BigQuery tables. The one used is `citybike_trips` table.
+ The project used `new_york_citibike` dataset in BigQuery public dataset. The one used is `citybike_trips` table.
  - The `tripduration` is our label -- indicates the duration expressed in seconds if each bike rental.
  - Other fields are potential features -- contains more than 58 million records.
-
 ## Methodology
-The project follows a standard machine learning pipeline, which includes the following steps:
-
- - Data Preprocessing: Cleaning the dataset, handling missing values, tranform datetime variables, and feature scaling.
-   
- - Model Selection: Using Power Query on BigQuery to split dataset into 3 sets to perform model selection and model evaluation. Months were used as a targeted measurement to split dataset. After that, trying out various machine learning algorithms and selecting the best-performing model based on evaluation metrics.
-   
+ - Data Preprocessing: Cleaning, handling missing values and tranforming datetime variables, and feature scaling.   
+ - Model Selection: Using Power Query on BigQuery to split dataset into 3 sets - for model selection and model evaluation purposes. Months were used as a targeted measurement to split dataset. 
  - Model Evaluation: Assessing the model's performance using appropriate evaluation metrics and fine-tuning as necessary.
-
-## Training Linear Regression model - Develop an effective asset with good performance
-### Model Optimization: Improve the performance of our ML model multiple times with Loss function
-
- **Mean Squared Error** -- avgerage squared distance between actual values and predicted values of the label
+## Train Linear Regression model - Develop an effective asset with Loss function - MSE
+### Model Optimization: Improve the performance of our ML model multiple times with **Mean Squared Error***
+*(avgerage squared distance between actual values and predicted values of the label)
  
 1. ```ruby
     trip_duration_by_stations - MSE = 111.2176
