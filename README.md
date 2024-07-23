@@ -1,4 +1,4 @@
-# Linear Regression with Prediction Features in Mobile Application 
+# Mobile Bike Rental Trip Time Prediction Model with Linear Regression	 
 
 ## Project Objectives
 The goal of this project is to develop a predictive model that enable customers to know the predicted average trip time and cost estimation for the ride if they provide their departure and arrival station. 
